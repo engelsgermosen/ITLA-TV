@@ -1,0 +1,115 @@
+﻿@using ITLA_TV.Core.Application.ViewModels.Series;
+@using ITLA_TV.Core.Application.ViewModels.Producers;
+@using ITLA_TV.Core.Application.ViewModels.Genres;
+
+@{
+    bool editMode = Model.Id == 0 ? false : true;
+    var productoras = ViewBag.productoras as List<ProducerViewModel>;
+    var generos = ViewBag.generos as List<GenresViewModel>;
+    ViewData["Title"] = !editMode ? "Creando serie" : "Editar serie";
+}
+@model SaveSerieViewModel;
+
+
+@if(productoras?.Count == 0 || generos?.Count == 0)
+{
+    @if(productoras?.Count ==0)
+    {
+        <div class="row mt-4">
+            <div class="col-10 mx-auto offset-md-1 col-xl-6 offset-xl-3 d-flex justify-content-between align-items-center">
+
+                <h4>Actualmente no existen productoras</h4>
+                <a asp-action="Create" asp-controller="Producer" class="btn btn-outline-warning text-dark">Crea tu primera productora aqui</a>
+            </div>
+        </div>
+    }
+    @if(generos?.Count == 0)
+    {
+        <div class="row mt-4">
+            <div class="col-10 mx-auto offset-md-1 col-xl-6 offset-xl-3 d-flex justify-content-between align-items-center">
+
+                <h4>Actualmente no existen generos</h4>
+                <a asp-action="Create" asp-controller="Gender" class="btn btn-outline-info text-dark">Crea tu primer genero aqui</a>
+            </div>
+        </div>
+    }
+
+}
+else
+{
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12 mx-auto col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+
+                <div class="card">
+                    <div class="card-header bg-dark text-light">
+                        <h4>@(!editMode ? "Creando serie" : $"Editando la serie {Model.Name}")</h4>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" asp-controller="Serie" asp-action="@(!editMode ? "Create" : "Edit")">
+                            <div class="mb-3">
+                                <label asp-for="Name" class="form-label">Nombre:</label>
+                                <input asp-for="Name" type="text" class="form-control" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="ImagePath" class="form-label">Url de la imagen:</label>
+                                <input asp-for="ImagePath" class="form-control" />
+                                <span asp-validation-for="ImagePath" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="VideoPath" class="form-label">Url del video:</label>
+                                <input asp-for="VideoPath" type="text" class="form-control" />
+                                <span asp-validation-for="VideoPath" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="ProducerId" class="form-label">Productora:</label>
+                                <select asp-for="ProducerId" class="form-select">
+                                    <option value="">--Seleccionar--</option>
+                                    @foreach (var i in productoras!)
+                                    {
+                                        <option value="@i.Id">@i.Name</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="ProducerId" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="PrimaryGender" class="form-label">Genero primario:</label>
+                                <select asp-for="PrimaryGender" class="form-select">
+                                    <option value="">--Seleccionar--</option>
+                                    @foreach (var i in generos!)
+                                    {
+                                        <option value="@i.Id">@i.Name</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="PrimaryGender" class="text-danger"></span>
+
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="SecondaryGender" class="form-label">Genero secundario:</label>
+                                <select asp-for="SecondaryGender" class="form-select">
+                                    <option value="">--Seleccionar--</option>
+                                    @foreach (var i in generos)
+                                    {
+                                        <option value="@i.Id">@i.Name</option>
+                                    }
+                                </select>
+                            </div>
+                            <input type="hidden" asp-for="Id" />
+                            <button type="submit" class="btn btn-primary float-end">
+                                @(!editMode ? "Guardar" : "Actualizar")
+                            </button>
+                            <a asp-controller="Serie" asp-action="Index" class="btn me-2 btn-warning">Volver atras</a>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+}
+
+

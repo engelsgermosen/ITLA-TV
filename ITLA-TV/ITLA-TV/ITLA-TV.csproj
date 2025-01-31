@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ITLA_TV</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ITLA-TV.Core.Application\ITLA-TV.Core.Application.csproj" />
+    <ProjectReference Include="..\ITLA-TV.Core.Domain\ITLA-TV.Core.Domain.csproj" />
+    <ProjectReference Include="..\ITLA-TV.Infraestructure.Persistence\ITLA-TV.Infraestructure.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

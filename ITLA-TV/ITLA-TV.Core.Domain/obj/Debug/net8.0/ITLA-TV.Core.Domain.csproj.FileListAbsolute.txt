@@ -1,0 +1,11 @@
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Domain\bin\Debug\net8.0\ITLA-TV.Core.Domain.deps.json
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Domain\bin\Debug\net8.0\ITLA-TV.Core.Domain.dll
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Domain\bin\Debug\net8.0\ITLA-TV.Core.Domain.pdb
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Domain\obj\Debug\net8.0\ITLA-TV.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Domain\obj\Debug\net8.0\ITLA-TV.Core.Domain.AssemblyInfoInputs.cache
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Domain\obj\Debug\net8.0\ITLA-TV.Core.Domain.AssemblyInfo.cs
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Domain\obj\Debug\net8.0\ITLA-TV.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Domain\obj\Debug\net8.0\ITLA-TV.Core.Domain.dll
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Domain\obj\Debug\net8.0\refint\ITLA-TV.Core.Domain.dll
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Domain\obj\Debug\net8.0\ITLA-TV.Core.Domain.pdb
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Domain\obj\Debug\net8.0\ref\ITLA-TV.Core.Domain.dll

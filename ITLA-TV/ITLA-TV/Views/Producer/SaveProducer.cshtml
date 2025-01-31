@@ -1,0 +1,38 @@
+﻿@{
+    bool editMode = Model.Id == 0 ? false : true;
+    ViewData["Title"] = !editMode ? "Creando productora" : "Editando productora";
+}
+@using ITLA_TV.Core.Application.ViewModels.Producers;
+@model SaveProducerViewModel;
+
+
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-12 mx-auto col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+
+            <div class="card">
+                <div class="card-header bg-dark text-light">
+                    <h4>@(!editMode ? "Creando productora" : $"Editando la productora {Model.Name}")</h4>
+                </div>
+                <div class="card-body">
+                    <form method="post" asp-controller="Producer" asp-action="@(!editMode ? "Create" : "Edit")">
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label">Nombre:</label>
+                            <input asp-for="Name" type="text" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <input type="hidden" asp-for="Id" />
+                        <button type="submit" class="btn btn-primary float-end">
+                            @(!editMode ? "Guardar" : "Actualizar")
+                        </button>
+                        <a asp-controller="Producer" asp-action="Index" class="btn me-2 btn-warning">Volver atras</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,21 @@
+﻿@model ITLA_TV.Core.Application.ViewModels.Series.SaveSerieViewModel;
+@{
+    var videoSplit = Model.VideoPath.Split('=');
+    var idVideo = $"https://www.youtube.com/embed/{videoSplit.LastOrDefault()}";
+    ViewData["Title"] = "Reproductor de video";
+
+}
+
+
+<div class="row">
+    <div class="col-10 mx-auto col-md-6 offset-md-3">
+        <div class="card col-12">
+            <div class="card-header">
+                <h4>@Model.Name</h4>
+            </div>
+            <div class="card-body mx-auto"><div>
+              <iframe width="560" height="315" src=@idVideo title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>

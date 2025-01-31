@@ -1,0 +1,40 @@
+﻿@model List<GenresViewModel>;
+@using ITLA_TV.Core.Application.ViewModels.Genres;
+@{
+    ViewData["Title"] = "Mantenimiento de generos";
+}
+
+<div class="container-fluid">
+    <div class="row mx-auto col-12  mb-3 col-md-8 d-flex  justify-content-end">
+        <div class="col-12 col-md-4">
+            <a asp-controller="Gender" asp-action="Create" class="w-100 mx-auto btn btn-outline-success">Agregar genero</a>
+
+        </div>
+    </div>
+
+
+    <div class="row mx-auto col-12 col-md-8 offset-md-2">
+        @if (Model.Count == 0 || Model == null)
+        {
+            <h4>No hay generos.</h4>
+        }
+        else
+        {
+            @foreach (var i in Model)
+            {
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h4 class="text-center mb-3">@i.Name</h4>
+                            <div class="btn-group d-flex gap-2">
+                                <a asp-controller="Gender" asp-action="Edit" asp-route-id="@i.Id" class="btn text-dark  btn-outline-warning">Editar</a>
+                                <a asp-controller="Gender" asp-action="Delete" asp-route-id="@i.Id" class="btn btn-outline-danger">Borrar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+</div>

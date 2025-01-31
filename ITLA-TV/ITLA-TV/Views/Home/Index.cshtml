@@ -1,0 +1,181 @@
+﻿@using ITLA_TV.Core.Application.ViewModels.Series;
+@using ITLA_TV.Core.Application.ViewModels.Producers;
+@using ITLA_TV.Core.Application.ViewModels.Genres;
+@model List<SerieViewModel>;
+
+
+@{
+    ViewData["Title"] = "Home Page";
+    var productoras = ViewBag.Producers as List<ProducerViewModel>;
+    var generos = ViewBag.Genres as List<GenresViewModel>;
+}
+
+
+<div class="row">
+    <div class="mx-auto col-12 px-4 d-flex gap-2">
+        <div id="menu-filtros" class="d-none d-md-block col-xl-2 col-md-3">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h2 class="pt-2">Filtros</h2>
+                    <button id="close-boton" class="d-block d-md-none btn-outline-danger">
+
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <div class="row my-3 bg-light d-flex flex-column py-3">
+
+                        <div class="">
+                            <h5>Productora</h5>
+                        </div>
+                        <div class="">
+                            <form asp-action="Index" asp-controller="Home" method="post" class="">
+                                <select class="form-select mb-2" name="ProducerName">
+                                    <option value="">--Seleccionar--</option>
+                                    @if (productoras?.Count > 0 && productoras != null)
+                                    { 
+                                         @foreach (var i in productoras) 
+                                        { 
+                                            <option value="@i.Name">@i.Name.ToString()</option> 
+                                         } 
+
+                                     } 
+                                </select>
+                                <button type="submit" class="btn w-100 btn-outline-primary">Filtrar</button>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="row my-5 bg-light d-flex flex-column">
+
+                        <div class="">
+                            <h5>Generos</h5>
+                        </div>
+                        <div class="">
+                            <form asp-action="Index" asp-controller="Home" method="post" class="">
+                                <select class="form-select mb-2" name="GeneroName">
+                                    <option value="">--Seleccionar--</option>
+                                     @foreach (var i in generos) 
+                                     { 
+                                        <option>@i.Name.ToString()</option> 
+                                     } 
+                                </select>
+                                <button type="submit" class="btn w-100 btn-outline-primary">Filtrar</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-xl-10 col-md-9">
+            <div class="row mb-3">
+
+                <form method="post" asp-action="Index" asp-controller="Home" class="w-100 d-flex gap-3 justify-content-between px-4">
+                    <input class="flex-grow-1 ps-2" placeholder="Buscar serie" type="text" name="SerieName" />
+                    <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                </form>
+            </div>
+
+            <div class="row mx-auto mb-3">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <button class="btn btn-outline-dark d-md-none"
+                            id="toggle-menu"
+                            type="button">
+                        MENU
+                    </button>
+                    <h4 class="d-none pt-1 text-center d-md-block">Todas las series</h4>
+                    <form class="d-flex gap-2" method="post" asp-controller="Home" asp-action="Order">
+                        <select class="form-select" name="ordenar">
+                            <option value="">--Seleccionar--</option>
+                            <option value="1">Productora</option>
+                            <option value="2">Género</option>
+                            <option value="3">Nombre</option>
+                        </select>
+                        <button type="submit" class="btn btn-outline-success">Ordenar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mx-auto">
+                @if (Model.Count == 0 || Model == null)
+                {
+                    <h4>No hay series que coincidan con esos parametros</h4>
+                }
+                else
+                {
+                    @foreach (var i in Model)
+                    {
+                        
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xxl-3 mb-4">
+                            <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+                                <div class="position-relative">
+                                    <img class="img-product-size card-img-top" src="@i.ImagePath" alt="@i.Name" />
+                                    <div class="position-absolute top-0 end-0 m-2">
+                                        <span class="badge bg-primary text-light">@i.PrimaryGender</span>
+                                        @if (!string.IsNullOrEmpty(i.SecondaryGender))
+                                        {
+                                            <span class="badge bg-secondary text-light">@i.SecondaryGender</span>
+                                        }
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="fw-bold">@i.Name</h5>
+                                    <p class="text-muted fs.4">@i.ProducerName</p>
+                                    <div class="d-flex justify-content-center gap-2 mt-2">
+                                        <a asp-controller="Serie" asp-action="VideoReproducer" asp-route-id="@i.Id" class="btn w-100 btn-outline-primary">Ver detalle</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #menu-filtros{
+        z-index: 10;
+    }
+</style>
+
+<script>
+    const menu = document.querySelector('#menu-filtros');
+    const btn = document.querySelector('#toggle-menu');
+    const btnCerrar = document.querySelector('#close-boton')
+
+    window.addEventListener('resize',() =>{
+
+        if(!menu.classList.contains('d-none'))
+        {
+            if(innerWidth>768)
+            {
+                menu.classList.remove('position-fixed')
+                menu.classList.remove('row');
+                menu.classList.remove('h-100');
+                menu.classList.add('d-none');
+            }
+        }
+    })
+    btn.addEventListener('click', () =>{
+
+        menu.classList.add('position-fixed')
+        menu.classList.add('row');
+        menu.classList.add('col-12')
+        menu.classList.add('h-100');
+        menu.classList.remove('d-none');
+    })
+
+    btnCerrar.addEventListener('click', () =>{
+         menu.classList.remove('position-fixed')
+        menu.classList.remove('row');
+        menu.classList.remove('col-12')
+        menu.classList.remove('h-100');
+        menu.classList.add('d-none');
+    })
+
+</script>

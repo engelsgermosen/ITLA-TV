@@ -1,0 +1,17 @@
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\bin\Debug\net8.0\ITLA-TV.Infraestructure.Persistence.deps.json
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\bin\Debug\net8.0\ITLA-TV.Infraestructure.Persistence.dll
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\bin\Debug\net8.0\ITLA-TV.Infraestructure.Persistence.pdb
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\bin\Debug\net8.0\ITLA-TV.Core.Application.dll
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\bin\Debug\net8.0\ITLA-TV.Core.Domain.dll
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\bin\Debug\net8.0\ITLA-TV.Core.Application.pdb
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\bin\Debug\net8.0\ITLA-TV.Core.Domain.pdb
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\obj\Debug\net8.0\ITLA-TV.Infraestructure.Persistence.csproj.AssemblyReference.cache
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\obj\Debug\net8.0\ITLA-TV.Infraestructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\obj\Debug\net8.0\ITLA-TV.Infraestructure.Persistence.AssemblyInfoInputs.cache
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\obj\Debug\net8.0\ITLA-TV.Infraestructure.Persistence.AssemblyInfo.cs
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\obj\Debug\net8.0\ITLA-TV.Infraestructure.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\obj\Debug\net8.0\ITLA-TV..A41D230A.Up2Date
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\obj\Debug\net8.0\ITLA-TV.Infraestructure.Persistence.dll
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\obj\Debug\net8.0\refint\ITLA-TV.Infraestructure.Persistence.dll
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\obj\Debug\net8.0\ITLA-TV.Infraestructure.Persistence.pdb
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Infraestructure.Persistence\obj\Debug\net8.0\ref\ITLA-TV.Infraestructure.Persistence.dll
