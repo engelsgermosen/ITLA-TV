@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QWLmdEyk4Oo=",
+  "dgSpecHash": "GASWZP6IRjg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mreng\\OneDrive\\Escritorio\\PracticasP3\\ITLA-TV\\ITLA-TV\\ITLA-TV.csproj",
+  "projectFilePath": "C:\\Users\\mreng\\OneDrive\\Escritorio\\PracticasP3\\ITLA-TV\\ITLA-TV\\ITLA-TV\\ITLA-TV.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mreng\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\mreng\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

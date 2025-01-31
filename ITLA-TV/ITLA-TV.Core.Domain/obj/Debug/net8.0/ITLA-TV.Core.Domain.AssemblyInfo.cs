@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ITLA-TV.Core.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+683f9956d0e301885924d3979782d819beefd46d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edf8d9256bd9e28157b30204af52e60611b91b94")]
 [assembly: System.Reflection.AssemblyProductAttribute("ITLA-TV.Core.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ITLA-TV.Core.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

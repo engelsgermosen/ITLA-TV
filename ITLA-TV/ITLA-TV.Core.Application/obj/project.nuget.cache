@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pTklQoOor2Q=",
+  "dgSpecHash": "FwTyAj2ztWA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mreng\\OneDrive\\Escritorio\\PracticasP3\\ITLA-TV\\ITLA-TV.Core.Application\\ITLA-TV.Core.Application.csproj",
+  "projectFilePath": "C:\\Users\\mreng\\OneDrive\\Escritorio\\PracticasP3\\ITLA-TV\\ITLA-TV\\ITLA-TV.Core.Application\\ITLA-TV.Core.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mreng\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.12\\microsoft.entityframeworkcore.8.0.12.nupkg.sha512",
     "C:\\Users\\mreng\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.12\\microsoft.entityframeworkcore.abstractions.8.0.12.nupkg.sha512",

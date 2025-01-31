@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mreng\\OneDrive\\Escritorio\\PracticasP3\\ITLA-TV\\",
+  "WorkspaceRootPath": "C:\\Users\\mreng\\OneDrive\\Escritorio\\PracticasP3\\ITLA-TV\\ITLA-TV\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1192BDF0-2FF0-4C9E-B450-A87B5D99B896}|ITLA-TV\\ITLA-TV.csproj|c:\\users\\mreng\\onedrive\\escritorio\\practicasp3\\itla-tv\\itla-tv\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{1192BDF0-2FF0-4C9E-B450-A87B5D99B896}|ITLA-TV\\ITLA-TV.csproj|c:\\users\\mreng\\onedrive\\escritorio\\practicasp3\\itla-tv\\itla-tv\\itla-tv\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1192BDF0-2FF0-4C9E-B450-A87B5D99B896}|ITLA-TV\\ITLA-TV.csproj|solutionrelative:itla-tv\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -20,9 +20,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\mreng\\OneDrive\\Escritorio\\PracticasP3\\ITLA-TV\\ITLA-TV\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mreng\\OneDrive\\Escritorio\\PracticasP3\\ITLA-TV\\ITLA-TV\\ITLA-TV\\appsettings.json",
               "RelativeDocumentMoniker": "ITLA-TV\\appsettings.json",
-              "ToolTip": "C:\\Users\\mreng\\OneDrive\\Escritorio\\PracticasP3\\ITLA-TV\\ITLA-TV\\appsettings.json",
+              "ToolTip": "C:\\Users\\mreng\\OneDrive\\Escritorio\\PracticasP3\\ITLA-TV\\ITLA-TV\\ITLA-TV\\appsettings.json",
               "RelativeToolTip": "ITLA-TV\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
