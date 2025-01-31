@@ -60,8 +60,21 @@ namespace ITLA_TV.Controllers
         [HttpPost]
         public async Task<IActionResult> DeletePost(int id)
         {
-            await genderService.Delete(id);
-            return RedirectToRoute(new { controller = "Gender", action = "Index" });
+            try
+            {
+                await genderService.Delete(id);
+                return RedirectToRoute(new { controller = "Gender", action = "Index" });
+            }
+            catch (Exception)
+            {
+
+                return RedirectToRoute(new { controller="Gender", action="Error" });
+            }
+        }
+
+        public IActionResult Error()
+        {
+            return View();
         }
     }
 }
