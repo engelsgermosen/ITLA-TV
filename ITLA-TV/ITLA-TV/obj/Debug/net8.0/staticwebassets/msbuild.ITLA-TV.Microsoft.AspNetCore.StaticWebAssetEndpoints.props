@@ -28,13 +28,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ITLA-TV.42rsjmpamq.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"42rsjmpamq"},{"Name":"integrity","Value":"sha256-/JLqtL28\u002BIUYy/gRV/crUxhPi/T3eVudIEvg\u002BfN2npM="},{"Name":"label","Value":"_content/ITLA-TV/ITLA-TV.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1125"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022/JLqtL28\u002BIUYy/gRV/crUxhPi/T3eVudIEvg\u002BfN2npM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 23:44:09 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1125"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022/JLqtL28\u002BIUYy/gRV/crUxhPi/T3eVudIEvg\u002BfN2npM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 31 Jan 2025 03:26:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ITLA-TV/ITLA-TV.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ITLA-TV.42rsjmpamq.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/JLqtL28\u002BIUYy/gRV/crUxhPi/T3eVudIEvg\u002BfN2npM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1125"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022/JLqtL28\u002BIUYy/gRV/crUxhPi/T3eVudIEvg\u002BfN2npM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 23:44:09 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1125"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022/JLqtL28\u002BIUYy/gRV/crUxhPi/T3eVudIEvg\u002BfN2npM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 31 Jan 2025 03:26:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ITLA-TV/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

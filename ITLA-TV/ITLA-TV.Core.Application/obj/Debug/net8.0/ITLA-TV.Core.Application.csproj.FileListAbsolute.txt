@@ -8,6 +8,7 @@ C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Application\
 C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Application\obj\Debug\net8.0\ITLA-TV.Core.Application.AssemblyInfoInputs.cache
 C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Application\obj\Debug\net8.0\ITLA-TV.Core.Application.AssemblyInfo.cs
 C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Application\obj\Debug\net8.0\ITLA-TV.Core.Application.csproj.CoreCompileInputs.cache
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Application\obj\Debug\net8.0\ITLA-TV.Core.Application.sourcelink.json
 C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Application\obj\Debug\net8.0\ITLA-TV..E8AAD29B.Up2Date
 C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Application\obj\Debug\net8.0\ITLA-TV.Core.Application.dll
 C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV.Core.Application\obj\Debug\net8.0\refint\ITLA-TV.Core.Application.dll

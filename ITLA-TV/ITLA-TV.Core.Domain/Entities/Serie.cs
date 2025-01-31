@@ -18,6 +18,7 @@ namespace ITLA_TV.Core.Domain.Entities
 
 
         public Gender? SecondaryGender { get; set; }
-        public int? SecondaryGenderId { get; set; }
+
+        public int? SecondaryGenderId {  get; set; }
     }
 }

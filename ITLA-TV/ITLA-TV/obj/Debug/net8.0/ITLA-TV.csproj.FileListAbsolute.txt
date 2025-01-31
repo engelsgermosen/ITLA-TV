@@ -438,6 +438,7 @@ C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV\obj\Debug\net8.0\
 C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV\obj\Debug\net8.0\ITLA-TV.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV\obj\Debug\net8.0\ITLA-TV.RazorAssemblyInfo.cache
 C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV\obj\Debug\net8.0\ITLA-TV.RazorAssemblyInfo.cs
+C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV\obj\Debug\net8.0\ITLA-TV.sourcelink.json
 C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV\obj\Debug\net8.0\scopedcss\bundle\ITLA-TV.styles.css
 C:\Users\mreng\OneDrive\Escritorio\PracticasP3\ITLA-TV\ITLA-TV\obj\Debug\net8.0\scopedcss\projectbundle\ITLA-TV.bundle.scp.css

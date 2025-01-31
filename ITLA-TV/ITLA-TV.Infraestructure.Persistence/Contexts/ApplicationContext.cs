@@ -11,6 +11,19 @@ namespace ITLA_TV.Infraestructure.Persistence.Contexts
         public DbSet<Producer> Producers { get; set; }
         public DbSet<Gender> Genres { get; set; }
 
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
+        {
+            foreach (var entry in ChangeTracker.Entries<Serie>())
+            {
+                if (entry.Entity.PrimaryGenderId == entry.Entity.SecondaryGenderId)
+                {
+                    entry.Entity.SecondaryGenderId = null;
+                }
+            }
+
+            return base.SaveChangesAsync(cancellationToken);
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
